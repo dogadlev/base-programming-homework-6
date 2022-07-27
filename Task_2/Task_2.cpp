@@ -1,4 +1,4 @@
-// Homework 6. Task_2.
+Ôªø// Homework 6. Task_2.
 
 #include <iostream>
 #include <string>
@@ -11,24 +11,24 @@ bool bool_inputRequired()
     std::string response = "";
     while (true)
     {
-        std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜ÂÚ˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: ";
+        std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á–µ—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: ";
         std::cin >> response;
-        if (response == "‰‡")
+        if (response == "–¥–∞")
         {
             return true;
         }
-        else if (response == "ÌÂÚ")
+        else if (response == "–Ω–µ—Ç")
         {
             return false;
         }
-        else std::cout << "Œ¯Ë·Í‡ ‚‚Ó‰‡! œÓÔÓ·ÛÈÚÂ Â˘Â ‡Á." << std::endl;
+        else std::cout << "–û—à–∏–±–∫–∞ –≤–≤–æ–¥–∞! –ü–æ–ø—Ä–æ–±—É–π—Ç–µ –µ—â–µ —Ä–∞–∑." << std::endl;
     }
 }
 
 int getCount()
 {
     int initCount = 0;
-    std::cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜ÂÚ˜ËÍ‡ (Ì‡ÚÛ‡Î¸ÌÓÂ ˜ËÒÎÓ): ";
+    std::cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á–µ—Ç—á–∏–∫–∞ (–Ω–∞—Ç—É—Ä–∞–ª—å–Ω–æ–µ —á–∏—Å–ª–æ): ";
     std::cin >> initCount;
     return initCount;
 }
@@ -39,7 +39,7 @@ void userInterface(Counter OCounter)
     bool exit = false;
     while (!exit)
     {
-        std::cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'x'): ";
+        std::cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ 'x'): ";
         std::cin >> buf;
         switch (buf)
         {
@@ -53,11 +53,11 @@ void userInterface(Counter OCounter)
             OCounter.checkCount();
             break;
         case 'x':
-            std::cout << "ƒÓ Ò‚Ë‰‡ÌËˇ!";
+            std::cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è!";
             exit = true;
             break;
         default:
-            std::cout << "ÕÂ‚ÂÌ˚È ‚‚Ó‰. œÓÔÓ·ÛÈÚÂ Â˘Â ‡Á." << std::endl;
+            std::cout << "–ù–µ–≤–µ—Ä–Ω—ã–π –≤–≤–æ–¥. –ü–æ–ø—Ä–æ–±—É–π—Ç–µ –µ—â–µ —Ä–∞–∑." << std::endl;
             break;
         }
     }
